@@ -1,0 +1,13 @@
+Clear-History; Remove-Item (Get-PSReadlineOption).HistorySavePath
+
+md MyProject
+
+md Server
+cd .\Server\
+md src
+md tests
+
+ng new Client --no-git
+cd .\Client\
+ng add @angular/material
+npm start
